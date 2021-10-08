@@ -62,99 +62,18 @@
             </fieldset>
             <div class="d-flex mb-3">
                 <button type="button" class="btn btn-success ml-auto" onclick='MyFun()'>Submit</button>
-                <button type="reset" class="btn btn-primary ml-5">Reset</button>
+                <button type="reset" onclick="reset()" class="btn btn-primary ml-5">Reset</button>
+                <button type="button" class="btn btn-warning ml-5" onclick="update()">Update</button>
+
             </div>
             </form>
 
-            <div class="std_info">
-                <table border="1" width="500px" id="info-table">
-                    <tr>
-                        <th colspan="2" width="240">Student Information</th>
-                    </tr>
-                    <tr>
-                        <td width="135">Name:</td>
-                        <td>
-                            <FONT face="arial" id="txtname"></FONT>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="135">Father Name:</td>
-                        <td>
-                            <font face="arial" id="txtfname"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="135">Institute Name:</td>
-                        <td>
-                            <font face="arial" id="inst-name"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="135">Batch:</td>
-                        <td>
-                            <font face="arial" id="txtbatch"></font>
-                        </td>
-                    </tr>
+            <div id="std_info">
 
-
-
-                    <tr>
-                        <th colspan="2" width="135">Subject Remarks</th>
-                    </tr>
-                    <tr>
-                        <td width="135">Office Automation:</td>
-                        <td>
-                            <font face="arial" id="auto"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="135">Web Designing:</td>
-                        <td>
-                            <font face="arial" id="designing"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="135">English:</td>
-                        <td>
-                            <font face="arial" id="eng"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="135">C++:</td>
-                        <td>
-                            <font face="arial" id="prog"></font>
-                        </td>
-                    </tr>
-
-
-                    <tr>
-                        <th colspan="2" width="140">Subject Remarks</th>
-                    </tr>
-                    <tr>
-                        <td width="135">Total:</td>
-                        <td>
-                            <font face="arial" id="total"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="135">Percentage:</td>
-                        <td>
-                            <font face="arial" id="percent"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="135">Grade:</td>
-                        <td>
-                            <font face="arial" id="grade"></font>
-                        </td>
-                    </tr>
-
-                </table>
             </div>
 
         </div>
         <!---mark sheet-->
-        <button onclick="printData()" class="btn btn-danger w-25 m-3">Print</button>
     </div>
     <!----container--->
 

@@ -1,3 +1,19 @@
+.container {
+    border-radius: 20px;
+    border-style: double;
+    border-color: blue;
+    width: 850px;
+    height: 10%; 
+    padding: 30px 30px 50px 30px;
+    margin: auto;
+    background-color: groove ;
+    font-family:cambria;
+}
+h1 {
+    color: green;
+    font-family:cambria;
+    font-size:40
+}
 fieldset.scheduler-border {
     border: 1px groove #ddd !important;
     padding: 0 1.4em 1.4em 1.4em !important;

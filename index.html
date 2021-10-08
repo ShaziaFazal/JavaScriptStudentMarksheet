@@ -4,69 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>student marksheet</title>
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container">
-        <u>
-            <h1>STUDENT MARKSHEET</h1>
-        </u>
-        <fieldset class="scheduler-border">
-            <legend>STUDENT INFORMATION</legend>
-            <table>
-                <form action="">
-                    <tr>
-                        <td>Name</td>
-                        <td><input type="text" name="name"></td>
+        <div class="mark-sheet">
+            <h1 align="center"><u>STUDENT MARKSHEET</u></h1>
+            <fieldset class="scheduler-border">
+                <legend>STUDENT INFORMATION</legend>
+                <table>
+                    <form name="form1">
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name"></td>
+                            &nbsp; &nbsp;
+                            <td>Father Name</td>
+                            <td><input type="text" name="fname"></td>
+                        </tr>
+                        <tr>
+                            <td>Institute Name</td>
+                            <td><input type="text" name="institutename"></td>
+                            &nbsp; &nbsp;
+                            <td>Batch</td>
+                            <td><input type="number" name="batch"></td>
+                        </tr>
 
-                        <td>Father Name</td>
-                        <td><input type="text" name="fname"></td>
-                    </tr>
-                    <tr>
-                        <td>Institute Name</td>
-                        <td><input type="text" name="institutename"></td>
+                </table>
+            </fieldset>
+            <fieldset class="scheduler-border">
+                <legend>SUBJECT MARKS</legend>
+                <table>
 
-                        <td>Batch</td>
-                        <td><input type="text" name="batch"></td>
-                    </tr>
-                </form>
-            </table>
-        </fieldset>
-        <fieldset class="scheduler-border">
-            <legend>SUBJECT MARKS</legend>
-            <table>
-                <form action="">
                     <tr>
                         <td>Office Automation:</td>
-                        <td><input type="text" name="name"> Out of 100</td>
+                        <td><input type="number" id="automation" name="automation" maxlength="2"> Out of 100</td>
                     </tr>
                     <tr>
                         <td>Web Designing:</td>
-                        <td><input type="text" name="name"> Out of 100</td>
+                        <td><input type="number" id="web" name="web" maxlength="2"> Out of 100</td>
                     </tr>
                     <tr>
                         <td>English:</td>
-                        <td><input type="text" name="name"> Out of 100</td>
+                        <td><input type="number" id="english" name="english" maxlength="2"> Out of 100</td>
                     </tr>
                     <tr>
                         <td>C++ programing:</td>
-                        <td><input type="text" name="name"> Out of 100</td>
+                        <td><input type="number" id="c" name="c" maxlength="2"> Out of 100</td>
                     </tr>
-                </form>
-            </table>
-        </fieldset>
-        <div class="d-flex">
-            <button class="btn btn-success ml-auto">Submit</button>
-            <button class="btn btn-primary ml-5">Reset</button>
+
+                </table>
+            </fieldset>
+            <div class="d-flex mb-3">
+                <button type="button" class="btn btn-success ml-auto" onclick='MyFun()'>Submit</button>
+                <button type="reset" onclick="reset()" class="btn btn-primary ml-5">Reset</button>
+                <button type="button" class="btn btn-warning ml-5" onclick="update()">Update</button>
+
+            </div>
+            </form>
+
+            <div id="std_info">
+
+            </div>
+
         </div>
+        <!---mark sheet-->
     </div>
+    <!----container--->
 
 
     <script src="app.js"></script>
